@@ -78,6 +78,15 @@ ollama pull llama3.2:1b
 python app.py
 ```
 
+## 🐳 Run with Docker
+
+```bash
+docker build -t software-agentic-ai .
+docker run -p 8501:8501 -e GROQ_API_KEY=your_key software-agentic-ai
+```
+
+Open http://localhost:8501. The container runs the Streamlit app (`stt.py`); the terminal version (`app.py`) needs a local Ollama and is meant to be run directly with Python.
+
 ## 📁 Project Structure
 
 ```
