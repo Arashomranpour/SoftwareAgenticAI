@@ -20,7 +20,7 @@ class State(TypedDict):
 
 
 graph = StateGraph(State)
-llm = ChatOllama(id="llama3.2:1b")
+llm = ChatOllama(model="llama3.2:1b")
 memory = MemorySaver()  # Memory saver initialized
 
 

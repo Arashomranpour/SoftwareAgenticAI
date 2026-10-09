@@ -165,7 +165,7 @@ with sidebar:
 user_input = st.text_area("Enter requirements:")
 
 if st.button("Run Workflow") and user_input:
-    state = {"topic": [HumanMessage(content=user_input)]}
+    state = {"topic": user_input}
     response = grapher.invoke(state)
     st.header("Results Just Came out")
     with st.spinner("Wait for it...", show_time=True):
